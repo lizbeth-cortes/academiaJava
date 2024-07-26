@@ -53,11 +53,11 @@ public class EmpleadoPorHoras extends Empleado {
     public void asignarVacaciones() {
         int diasVacaciones = 0;
         if (numHoras <= 500) {
-            diasVacaciones = 0; // 12 días de vacaciones si trabaja 2000 o más horas al año
+            diasVacaciones = 0; // 0 días de vacaciones si trabaja menos de 500 horas al año
         } else if (numHoras <= 1000) {
             diasVacaciones = 6; // 6 días de vacaciones si trabaja entre 1000 y 1999 horas al año
         }else if (numHoras <= 2000) {
-            diasVacaciones = 12; // 6 días de vacaciones si trabaja entre 1000 y 1999 horas al año
+            diasVacaciones = 12; // 12 días de vacaciones si trabaja más de 2000 horas al año
         }
         System.out.println("Tiene " + diasVacaciones + " días de vacaciones.");
     }
