@@ -81,6 +81,12 @@ public abstract class Cafe {
             + "\nPrecio: $" + calcularTotal() + obtenerNombreTipoLeche();
     }
 
+
+    //Muestra la descripción del tipo de café solicitado
+    public void getInfo(){
+        System.out.println(getTipo().getDescripcion()); 
+    }
+
     /**
      * Se calcula el precio total del café. 
      * Este método será implementado por las subclases 

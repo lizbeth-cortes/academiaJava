@@ -4,7 +4,7 @@ import principal.cafeteria.Cliente;
 import principal.cafeteria.cafe.Cafe;
 import principal.cafeteria.cafe.tipos.*;
 
-public class Principal {
+public class Cafeteria {
     public static void main(String[] args) {
 
         /*
@@ -28,6 +28,10 @@ public class Principal {
         Cafe cafe1 = Inyector.crearCafe(TipoCafe.EXPRESSO, TipoLeche.LECHE_DESLACTOSADA);
         Cliente cliente1 = new Cliente("Juan", cafe1);
         cliente1.mostrarInfo();
+
+        //Muestra los ingredientes y el contenido de cada café
+        cafe1.getInfo();
+        
 
         //* Se crea un cliente con café Capuchino y leche de Almendras */
         Cafe cafe2 = Inyector.crearCafe(TipoCafe.CAPUCHINO, TipoLeche.LECHE_ALMENDRAS);
